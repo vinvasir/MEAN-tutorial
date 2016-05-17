@@ -10,6 +10,8 @@ var async = require('async');
 var socketio = require('socket.io');
 //var express = require('express');
 
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
 var express = require('./project/config/express');
 
 var app = express();
